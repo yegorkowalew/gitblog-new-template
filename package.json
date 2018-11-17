@@ -1,12 +1,12 @@
 {
-  "name": "bootstrap-4",
+  "name": "New gitblog template",
   "version": "2.0.0",
-  "description": "Start project with use Bootstrap 4",
-  "author": "itchief.ru",
+  "description": "New template for gitblog",
+  "author": "Yegor Kowalew",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/itchief/gulp-project-bootstrap-4.git"
+    "url": "https://github.com/yegorkowalew/gitblog-new-template"
   },
   "dependencies": {
     "jquery": "^3.3.1",
