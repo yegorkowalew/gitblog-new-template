@@ -17,6 +17,7 @@ html {
     height: 220px;
     line-height: 220px; /* Vertically center the text there */
     background-color: #f5f5f5;
+    color:#333;
   }
   
   
@@ -44,7 +45,7 @@ html {
 body {
     // padding-top: 3rem;
     // padding-bottom: 3rem;
-    color: #5a5a5a;
+    color: #fff;
   }
   
   
@@ -112,34 +113,19 @@ body {
   .carousel-caption .display-4 {
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 4rem;
+    text-shadow: 1px 1px 2px rgb(24, 24, 24);
+    // -webkit-filter: drop-shadow(3px 3px 20px black);
+  }
+
+  .carousel-caption p {
+    font-size: 2rem;
   }
 
 .black {
   background-color: #5a5a5a;
   color: #f5f5f5;
 }
-
-  /* RESPONSIVE CSS
-  -------------------------------------------------- */
-  
-  @media (min-width: 40em) {
-    /* Bump up size of carousel content */
-    .carousel-caption p {
-      margin-bottom: 1.25rem;
-      font-size: 1.25rem;
-      line-height: 1.4;
-    }
-  
-    .featurette-heading {
-      font-size: 50px;
-    }
-  }
-  
-  @media (min-width: 62em) {
-    .featurette-heading {
-      margin-top: 7rem;
-    }
-  }
 
 .content {
   padding: 3rem 1rem;
@@ -203,22 +189,126 @@ body {
   font-weight: bold;
   // opacity: 1;
 }
-.navbar {
-  // border-bottom:1px solid #eee;
-  // opacity: 0.7;
-  
-}
-
-.nav-dark {
-  background-color:blue !important;
-}
-.nav-tran {
-  background-color:red !important;
-}
 
 .btn {
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: bold;
-
 }
+
+@media (max-width: 1599px) {
+  /* CSS для ширины от 992px до 1199px */
+  .carousel-caption .display-4 {
+    font-size: 2.6rem;
+  }
+  .carousel-caption p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  /* CSS для ширины от 992px до 1199px */
+  .carousel-caption .display-4 {
+    font-size: 2.2rem;
+  }
+  .carousel-caption p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  /* CSS для ширины от 992px до 1199px */
+  .carousel-caption .display-4 {
+    font-size: 1.3rem;
+  }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+  .container-fluid h1 {
+    font-size: 1.6rem;
+  }
+  .container-fluid p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-height: 720px) {
+  .carousel-item {
+    height: 720px;
+  }
+}
+
+@media (orientation: portrait) {
+  .carousel-item {
+    height: 580px;
+  }
+}
+
+.galimg {
+  padding: 0;
+  background-color: #ee4b28;
+  a {
+    color: #fff;
+    .card-title {
+      text-transform: uppercase;
+      // text-shadow: 1px 1px 2px rgb(24, 24, 24);
+    }
+  }
+}
+
+.card-img {
+  border-radius: 0;
+}
+
+// .galimg {
+//   a:hover {
+//     opacity: 0.9;
+//     .card-title {
+//       color:#eee;
+//     }
+//   }
+// }
+
+.galimg a:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  // top: 40%;
+  // left: 50%;
+  // margin: -14px 0 0 -10px;
+  // background: url(https://wp-lessons.com/wp-content/uploads/2015/01/magnifier.png) no-repeat;
+  content: '';
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  background: rgba(238, 75, 40, 0.7);
+ }
+ .galimg a:hover:before {
+  // top: 50%;
+  opacity: 1;
+ }
+//  .galimg a:after {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   top: 0;
+//   background: rgba(0, 0, 0, 0.1);
+//   content: '';
+//   opacity: 1;
+//   -webkit-transition: all 0.3s linear;
+//   transition: all 0.3s linear;
+//  }
+ .galimg a:hover:after {
+  opacity: 1;
+ }
+//  .galimg a img {
+//   padding: 0;
+//   margin: 0;
+//   // position: absolute;
+//   max-width: 100%;
+//   height: auto;
+//  }
+ .card-img-overlay {
+   z-index: 3000;
+ }
