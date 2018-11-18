@@ -1,5 +1,5 @@
 function onOffOpacity(opacityVol) {
-    $('.navbar').animate({opacity: opacityVol,}, 1500, function() {});
+    $('.navbar').animate({opacity: opacityVol,}, 500, function() {});
 }
 
 function opacityOnLoad() {

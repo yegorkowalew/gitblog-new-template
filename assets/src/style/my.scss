@@ -115,7 +115,7 @@ body {
     font-weight: bold;
     font-size: 4rem;
     text-shadow: 1px 1px 2px rgb(24, 24, 24);
-    // -webkit-filter: drop-shadow(3px 3px 20px black);
+    -webkit-filter: drop-shadow(3px 3px 20px black);
   }
 
   .carousel-caption p {
@@ -174,7 +174,7 @@ body {
 
 .social i {
   padding-right: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 32px;
   font-size: 3rem;
   color: #F05F40;
 }
@@ -251,7 +251,9 @@ body {
     color: #fff;
     .card-title {
       text-transform: uppercase;
-      // text-shadow: 1px 1px 2px rgb(24, 24, 24);
+      font-weight: bold;
+      text-shadow: 1px 1px 1px rgb(24, 24, 24);
+      -webkit-filter: drop-shadow(3px 3px 20px black);
     }
   }
 }
@@ -260,23 +262,10 @@ body {
   border-radius: 0;
 }
 
-// .galimg {
-//   a:hover {
-//     opacity: 0.9;
-//     .card-title {
-//       color:#eee;
-//     }
-//   }
-// }
-
 .galimg a:before {
   position: absolute;
   width: 100%;
   height: 100%;
-  // top: 40%;
-  // left: 50%;
-  // margin: -14px 0 0 -10px;
-  // background: url(https://wp-lessons.com/wp-content/uploads/2015/01/magnifier.png) no-repeat;
   content: '';
   opacity: 0;
   z-index: 1;
@@ -284,31 +273,37 @@ body {
   transition: all 0.2s linear;
   background: rgba(238, 75, 40, 0.7);
  }
+
  .galimg a:hover:before {
-  // top: 50%;
   opacity: 1;
  }
-//  .galimg a:after {
-//   position: absolute;
-//   width: 100%;
-//   height: 100%;
-//   top: 0;
-//   background: rgba(0, 0, 0, 0.1);
-//   content: '';
-//   opacity: 1;
-//   -webkit-transition: all 0.3s linear;
-//   transition: all 0.3s linear;
-//  }
+
  .galimg a:hover:after {
   opacity: 1;
  }
-//  .galimg a img {
-//   padding: 0;
-//   margin: 0;
-//   // position: absolute;
-//   max-width: 100%;
-//   height: auto;
-//  }
+
  .card-img-overlay {
-   z-index: 3000;
+   z-index: 2;
  }
+
+ .items {
+  float:left;
+  position: relative;
+}
+
+.item {
+  display:block;
+}
+
+.info {
+  position: absolute;
+  top:26px;
+  display:none;
+  width:500px;
+  z-index: 100;
+  
+}
+
+.items:hover .info {
+  display:block;
+}
