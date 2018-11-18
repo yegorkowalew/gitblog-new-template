@@ -24,14 +24,9 @@ html {
   /* Custom page CSS
   -------------------------------------------------- */
   /* Not required for template or sticky footer method. */
-  
-//   body > .container {
-//     padding: 60px 15px 0;
-//   }
-  
   .footer > .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
   
   code {
@@ -41,17 +36,14 @@ html {
   /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-
 body {
     // padding-top: 3rem;
     // padding-bottom: 3rem;
     color: #fff;
   }
   
-  
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
-  
   /* Carousel base class */
   .carousel {
     margin-bottom: 0;
@@ -65,7 +57,6 @@ body {
   
   /* Declare heights because of positioning of img element */
   .carousel-item {
-    // height: 32rem;
     height: 970px;
     background-color: #777;
   }
@@ -75,13 +66,10 @@ body {
     left: 0;
     min-width: 100%;
     height: 970px;
-    // height: 32rem;
   }
-  
   
   /* MARKETING CONTENT
   -------------------------------------------------- */
-  
   /* Center align the text within the three columns below the carousel */
   .marketing .col-lg-4 {
     margin-bottom: 1.5rem;
@@ -95,10 +83,8 @@ body {
     margin-left: .75rem;
   }
   
-  
   /* Featurettes
   ------------------------- */
-  
   .featurette-divider {
     margin: 5rem 0; /* Space out the Bootstrap <hr> more */
   }
@@ -132,42 +118,43 @@ body {
   text-align: justify;
 }
 
+hr {
+  max-width: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .bl-white {
   background-color:#fff;
   color:#333;
+  hr {
+    border-color: #222;
+    border-top: 1px solid #222;
+    border-width: 2px;
+  }
 }
 .bl-black {
   background-color:#222;
   color:#fff;
+  hr {
+    border-color: #eee;
+    border-top: 1px solid #eee;
+    border-width: 2px;
+  }
 }
+
 .bl-red {
   background-color: #F05F40;
   color:#fff;
-}
-
-.hr-light {
-  border-color: #eee;
-  max-width: 100px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-top: 1px solid #eee;
-  border-width: 2px;
-}
-
-.hr-black {
-  border-color: #222;
-  max-width: 100px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-top: 1px solid #222;
-  border-width: 2px;
+  hr {
+    border-color: #eee;
+    border-top: 1px solid #eee;
+    border-width: 2px;
+  }
 }
 
 .hr-red {
   border-color: #F05F40;
-  max-width: 100px;
-  margin-top: 20px;
-  margin-bottom: 20px;
   border-top: 1px solid #F05F40;
   border-width: 2px;
 }
@@ -187,7 +174,6 @@ body {
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: bold;
-  // opacity: 1;
 }
 
 .btn {
