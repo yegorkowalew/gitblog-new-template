@@ -22,4 +22,22 @@ $(document).ready(function(){
             }
         }
     });
+    $('.navbar').hover(function() {
+        if ((onScrollBottom === false) && ($(window).scrollTop() === 0)) {
+            onScrollBottom = true;
+            onOffOpacity(1);
+        }
+    }, function() {
+        if ((onScrollBottom === true) && ($(window).scrollTop() === 0)) {
+            onScrollBottom = false;
+            onOffOpacity(0.1);
+        }
+    });
+    $('#go-to-top').each(function(){
+        $(this).click(function(){ 
+            $('html,body').animate({ scrollTop: 0 }, 'slow');
+            return false; 
+        });
+    });
+
 });
