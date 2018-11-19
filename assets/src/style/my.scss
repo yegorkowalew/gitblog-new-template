@@ -56,10 +56,21 @@ body {
   }
   
   /* Declare heights because of positioning of img element */
-  .carousel-item {
+.carousel-item {
     height: 970px;
     background-color: #777;
+}
+
+.carousel-in {
+    .carousel-item {
+      height: 380px;
   }
+  .carousel-caption {
+    bottom: 3rem;
+    top:16%;
+  }
+}
+
   .carousel-item > img {
     position: absolute;
     top: 0;
@@ -308,4 +319,10 @@ hr {
 
 .fil0 {
   fill:#f05f40;
+}
+
+.img-thumbnail {
+  width: 200px;
+  margin-right:10px;
+  margin-top:6px;
 }
