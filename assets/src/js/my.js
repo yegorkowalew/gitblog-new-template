@@ -1,5 +1,5 @@
 function onOffOpacity(opacityVol) {
-    $('.navbar').animate({opacity: opacityVol,}, 500, function() {});
+    $('.navbar').stop().animate({opacity: opacityVol,}, 500, function() {});
 }
 
 function opacityOnLoad() {
@@ -7,8 +7,9 @@ function opacityOnLoad() {
   }
 
 $(document).ready(function(){
-    var timerOnLoad = setTimeout(opacityOnLoad, 2000);
     var onScrollBottom = false;
+    var timerOnLoad = setTimeout(opacityOnLoad, 2000);
+    
     $( window ).scroll(function() {
         clearTimeout(timerOnLoad);
         if (onScrollBottom === false) {
@@ -22,22 +23,25 @@ $(document).ready(function(){
             }
         }
     });
+
     $('.navbar').hover(function() {
+        $('.fil0').css({fill: "#db3636", transition: "0.5s"});
         if ((onScrollBottom === false) && ($(window).scrollTop() === 0)) {
             onScrollBottom = true;
             onOffOpacity(1);
         }
     }, function() {
+        $('.fil0').css({ fill: "#f05f40", transition: "0.5s"});
         if ((onScrollBottom === true) && ($(window).scrollTop() === 0)) {
             onScrollBottom = false;
-            onOffOpacity(0.1);
+            onOffOpacity(0.1);     
         }
     });
+
     $('#go-to-top').each(function(){
         $(this).click(function(){ 
             $('html,body').animate({ scrollTop: 0 }, 'slow');
             return false; 
         });
     });
-
 });
