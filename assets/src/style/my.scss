@@ -326,3 +326,16 @@ hr {
   margin-right:10px;
   margin-top:6px;
 }
+
+// Стили для блога
+.blog {
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.blog h1 {
+  font-size: 3rem;
+}
+
+.blog h1 a:hover{
+  text-decoration: none;
+}
