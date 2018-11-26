@@ -17,21 +17,24 @@
      </g>
     </svg>
   </a>
-    <a class="navbar-brand" href="/">pcmaster.top</a>
+    <a class="navbar-brand" href="/blog.html">Blog</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
+                <a class="nav-link" href="/">pcmaster.top</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="services.html">Услуги</a>
+              <a class="nav-link" href="blog-test.html">Программирование</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Контакты</a>
+              <a class="nav-link" href="#">Домашнее</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Электроника</a>
+          </li>
         </ul>
     </div>
 </nav>
@@ -45,25 +48,43 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="first-slide" src="img/headers/header-01.jpg" alt="First slide">
+            <img class="first-slide" src="img/headers/header-03.jpg" alt="First slide">
             <div class="container">
-              <div class="carousel-caption">
-                <h1 class="display-4">Компьютерная помощь для всех!</h1>
-                <hr class="hr-red">
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Подробнее</a></p>
+              <div class="carousel-caption text-left">
+                  <h1 class="display-4">pcmaster.top </h1>
+                <div class="row circles">
+                    <div class="col-4">
+                        <img class="rounded-circle" src="img/gallery/1/OS-3.jpg" alt="" width="100" height="100" style="margin-right:20px">
+                        <p><a href="http://">Операционные системы</a></p>
+                    </div>
+                    <div class="col-4">
+                        <img class="rounded-circle" src="img/gallery/1/computer-1.jpg" alt="" width="100" height="100" style="margin-right:20px">
+                        <p><a href="http://">Компьютеры</a></p>
+                    </div>
+                    <div class="col-4">
+                        <img class="rounded-circle" src="img/gallery/1/kassa-1.jpg" alt="" width="100" height="100" style="margin-right:20px">
+                        <p><a href="http://">Кассовые аппараты</a></p>
+                    </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <img class="second-slide" src="img/headers/header-02.jpg" alt="Second slide">
+          <div class="carousel-item js">
+            <img class="first-slide" src="${val.img}" alt="${val.title_ru}">
             <div class="container">
-              <div class="carousel-caption">
-                <h1 class="display-4">Помощь по телефону</h1>
-                <hr class="hr-red">
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Подробнее</a></p>
-              </div>
+                <div class="carousel-caption text-left">
+                    <h1>${val.title_ru} 
+                        <span class="badge badge-light">${val.summ}</span>
+                    </h1>
+                    <p>
+                        ${val.description}
+                    </p>
+                    <p>
+                        <a class="btn btn-lg btn-primary" href="/blog/theme/${val.title_slug}" role="button">Показать</a>
+                    </p>
+                </div>
             </div>
-          </div>
+        </div>
           <div class="carousel-item">
             <img class="third-slide" src="img/headers/header-03.jpg" alt="Third slide">
             <div class="container">
@@ -88,93 +109,81 @@
     <!-- Begin page content -->
 <div class="container-fluid bl-white">
     <div class="row justify-content-center">
-      <div class="col-12 col-xl-8 col-lg-9 col-md-10 content">
-          <h1 class="text-center">Ноутбуки</h1>
-          <hr class="hr">
-          <p class="lead">
-            <img src="img/gallery/1/notebook-1.jpg" alt="Ноутбуки" class="img-thumbnail float-left">
-            Мой ноутбук работает с 2006 года по сей день. Если интересно, я могу рассказать что делать, как обращаться со своим ноутбуком, чтоб он тоже работал десятки лет, без выхода из строя. Если ноутбука еще нету, мне совершенно не тяжело проконсультировать по выбору ноутбука или подобрать ноутбук под Ваши деньги. Так же старенький ноутбук можно улучшить, если интересно - Звоните или <a href="http://">читайте дальше</a>
-          </p>
+        <div class="col-10 content blog">
+            <img src="img/blog/domashnee/testovoe-o-domashnem/200x200.jpg" alt="Ноутбуки" class="img-thumbnail float-left" style="margin-right:5%">
+            <h1><a href="http://">Тестовое о домашнем</a></h1>
+            <p class="lead">
+                Предварительный текст для статьи: Тестовое о домашнем. Из раздела "Домашнее". Должно все работать 1.
+            </p>
+            <div class="row justify-content-end text-muted">2018.07.02 14:25</div>    
         </div>
-      </div>
-  </div>
-
-  <div class="container-fluid bl-white">
-    <div class="row justify-content-center">
-      <div class="col-12 col-xl-8 col-lg-9 col-md-10 content">
-          <h1 class="text-center">Компьютеры</h1>
-          <hr class="hr">
-          <p class="lead">
-            <img src="img/gallery/1/computer-1.jpg" alt="Компьютеры" class="img-thumbnail float-left">
-            С компьютерной техникой я познакомился еще в далеком 2000 году. После этого я провожу минимум по шесть часов в сутки за компьютером. Еще мелким пацаном я уже апгрейдил свой компьютер лично, потому как он был сильно б/у. С любым видом работ с компьютером я знаком неоднократно. Чистка, апгрейд, подетальный ремонт - это не проблема! Звоните или <a href="http://">читайте дальше</a>.
-          </p>
-        </div>
-      </div>
-  </div>
-
-  <div class="container-fluid bl-white">
-    <div class="row justify-content-center">
-      <div class="col-12 col-xl-8 col-lg-9 col-md-10 content">
-          <h1 class="text-center">Планшеты</h1>
-          <hr class="hr">
-          <p class="lead">
-            <img src="img/gallery/1/tablet-1.jpg" alt="Планшеты" class="img-thumbnail float-left">
-            Это как телефоны, только экран больше))) А значит и подход к ним как современным телефонам. Нету там ничего сложного. Если глючит, тупит, не хватает памяти, что-то делает сам без Вашего участвия - звоним. Если хочется попытаться наладить самому. - <a href="http://">читаем далее</a>.
-          </p>
-        </div>
-      </div>
-  </div>
-
-  <div class="container-fluid bl-white">
-    <div class="row justify-content-center">
-      <div class="col-12 col-xl-8 col-lg-9 col-md-10 content">
-          <h1 class="text-center">Кассовые аппараты</h1>
-          <hr class="hr">
-          <p class="lead">
-            <img src="img/gallery/1/kassa-1.jpg" alt="Кассовые аппараты" class="img-thumbnail float-left">
-            Работал в торговой сети из более двадцати розничных магазинов три года. Имею полное представление о рабочем месте кассира и о том как это место должно быть организовано. Меня не пугают горы проводов и кучи всяких непонятных устройств. По настройке любого из этих устройств я могу проконсультировать или дать номер телефона специалиста. <a href="http://">Читайте дальше</a> что я еще могу.
-       </p>
-        </div>
-      </div>
-  </div>
-
-  <div class="container-fluid bl-white">
-    <div class="row justify-content-center">
-      <div class="col-12 col-xl-8 col-lg-9 col-md-10 content">
-          <h1 class="text-center">Видеонаблюдение</h1>
-          <hr class="hr">
-          <p class="lead">
-            <img src="img/gallery/1/video-1.jpg" alt="Видеонаблюдение" class="img-thumbnail float-left">
-            Есть опыт установки систем видеонаблюдения как аналогового так и цифрового. Опыт настройки камер и настройки удаленного доступа к просмотру видео. Работал и неоднократно закупался камерами производителей Tecsar, Dahua, Hikvision и их видеорегистраторами. Если есть большое желание установить себе видеонаблюдение, а знаний не хватает - читаем дальше или звоним. <a href="http://">читаем дальше</a> или звоним.
-          </p>
-        </div>
-      </div>
-  </div>
-
-  <div class="container-fluid bl-white">
-    <div class="row justify-content-center">
-      <div class="col-12 col-xl-8 col-lg-9 col-md-10 content">
-          <h1 class="text-center">Операционные системы</h1>
-          <hr class="hr">
-          <p class="lead">
-            <img src="img/gallery/1/OS-3.jpg" alt="Операционные системы" class="img-thumbnail float-left">
-            Начинал с Windows 3.11, сейчас считаю себя аматором систем на базе OS Linux. Не боюсь ни проблем с операционными системами ни с софтом в них установленных. Могу подсказать где взять, как установить, как продиагностировать и что делать если возникли трудности. Если вдруг не чистится реестр, замучали вирусы, лезет спам или другие трудности - <a href="http://">читаем дальше</a> или звоним.
-          </p>
-        </div>
-      </div>
-  </div>
-
-
-<div class="container-fluid bl-black">
-  <div class="row justify-content-center">
-    <div class="col-12 col-xl-8 col-lg-9 col-md-10 content">
-        <h1 class="text-center">По телефону я Вам расскажу на&nbsp;много&nbsp;больше!</h1>
-        <hr class="hr">
-        <p class="lead">Телефон работает без выходных, обедов, перекуров. Всегда готов помочь, в любое время дня и ночи. На письма отвечаю реже, но конкретней и уверенней.</p>
-        <p class="lead">Звоните по номеру: (095) 54 44 853 это бесплатно! Или перейдите в раздел <a href="http://#">контакты</a> чтоб ознакомиться с другими способами связи.</p>
     </div>
-  </div>
 </div>
+
+  <div class="container-fluid bl-white">
+    <div class="row justify-content-center">
+      <div class="col-10 content blog">
+          <img src="img/blog/programmirovanie/o-githabovtsah/200x200.jpg" alt="Компьютеры" class="img-thumbnail float-left" style="margin-right:5%">
+          <h1><a href="http://">О гитхабовцах</a></h1>
+          <p class="lead">
+            Предварительный текст для новой статьи: "О гитхабовцах". Из раздела "Программирование". Должно все работать 2.
+          </p>
+          <div class="row justify-content-end text-muted">2018.07.02 14:25</div>  
+        </div>
+      </div>
+  </div>
+
+  <div class="container-fluid bl-white">
+    <div class="row justify-content-center">
+      <div class="col-10 content blog">
+          <img src="img/blog/programmirovanie/na-skoruyu-ruku-o-githabovskoj-razmetke/200x200.jpg" alt="Планшеты" class="img-thumbnail float-left" style="margin-right:5%">
+          <h1><a href="http://">На скорую руку о гитхабовской разметке</a></h1>
+          <p class="lead">
+            Предварительный текст для новой статьи: "На скорую руку о гитхабовской разметке". Из раздела "Программирование". Должно все работать 3.
+          </p>
+          <div class="row justify-content-end text-muted">2018.07.02 14:25</div>
+        </div>
+      </div>
+  </div>
+
+  <div class="container-fluid bl-white">
+    <div class="row justify-content-center">
+      <div class="col-10 content blog">
+          <img src="img/blog/elektronika/nazvanie-elektronnoj-stati/200x200.jpg" alt="Кассовые аппараты" class="img-thumbnail float-left" style="margin-right:5%">
+          <h1><a href="http://">Название электронной статьи</a></h1>
+          <p class="lead">
+            Предварительный текст для новой статьи: "Название электронной статьи". Из раздела "Электроника". Должно все работать 5.
+          </p>
+          <div class="row justify-content-end text-muted">2018.07.02 14:25</div>
+        </div>
+      </div>
+  </div>
+
+  <div class="container-fluid bl-white">
+    <div class="row justify-content-center">
+      <div class="col-10 content blog">
+          <img src="img/blog/domashnee/nazvanie-testovoj-stati-kopiya/200x200.jpg" alt="Видеонаблюдение" class="img-thumbnail float-left" style="margin-right:5%">
+          <h1><a href="http://">Название тестовой статьи - копия</a></h1>
+          <p class="lead">
+            Предварительный текст для новой статьи: "Название тестовой статьи - копия". Из раздела "Домашнее". Должно все работать 4.
+          </p>
+          <div class="row justify-content-end text-muted">2018.07.02 14:25</div>
+        </div>
+      </div>
+  </div>
+
+  <div class="container-fluid bl-white">
+    <div class="row justify-content-center">
+      <div class="col-10 content blog">
+          <img src="img/blog/programmirovanie/o-githab/200x200.jpg" alt="Операционные системы" class="img-thumbnail float-left" style="margin-right:5%">
+          <h1><a href="http://">О гитхаб</a></h1>
+          <p class="lead">
+            Предварительный текст для новой статьи: "О гитхаб". Из раздела "Программирование". Должно все работать 6.
+          </p>
+          <div class="row justify-content-end text-muted">2018.07.02 14:25</div>
+        </div>
+      </div>
+  </div>
 
 <div class="container-fluid bl-white">
     <div class="row justify-content-center">
@@ -278,19 +287,20 @@
 <footer class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-sm-3 col-md-3 col-xl-5">
-        <span>&copy; 2017-2018 <a href="https://pcmaster.top">Pcmaster.top</a></span>
+      <div class="col-12 col-sm-12 col-md-12 col-xl-5">
+        <p>&copy; 2017-2018 <a href="https://pcmaster.top">Pcmaster.top</a></p>
+        <p>Статей на сайте: <span id="articles_count">10</span></p>
+        <p>Последнее обновление: <span id="last_rebuild">23.10.2018</span></p>
       </div>
-      <div class="col-12 col-sm-8 col-md-8 col-xl-6">
+      <div class="col-12 col-sm-10 col-md-10 col-xl-6">
         <p>Этот сайт создан по собственной инициативе, собственными руками без любой помощи. Создан для того чтоб делиться опытом и знаниями с людьми не особо разбирающимися в компьютерной технике.</p>
       </div>
-      <div class="col-12 col-sm-1 col-md-1 col-xl-1">
+      <div class="col-12 col-sm-2 col-md-2 col-xl-1">
         <a href="/" id="go-to-top">Вверх</a>
       </div>
     </div>
   </div>
 </footer>
-
 //= template/footer.html
 </body>
 </html>
