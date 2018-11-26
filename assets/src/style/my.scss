@@ -320,9 +320,9 @@ hr {
 .items:hover .info {
   display:block;
 }
-.container .row {
-  padding-top: 60px;
-}
+// .container .row {
+//   padding-top: 60px;
+// }
 
 .fil0 {
   fill:#f05f40;
@@ -345,4 +345,26 @@ hr {
 
 .blog h1 a:hover{
   text-decoration: none;
+}
+
+.container .row {
+  padding-top: 0px;
+}
+
+.circles p {
+  // background-color: #fff;
+  display: inline;
+  position: absolute;
+  left: 20px;
+  bottom:0px;
+  height: 20px;
+}
+
+.circles a {
+  color:#fff;
+}
+
+.circles a:hover {
+  color:#ee4b28;
+  
 }
