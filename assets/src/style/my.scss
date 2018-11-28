@@ -427,3 +427,20 @@ svg path{
   visibility: visible;
   opacity: 1;
 }
+
+.content > h1 > a:hover {
+  text-decoration: none;
+}
+
+.cont i {
+  color: #ee4b28;
+  font-size: 2rem;
+  vertical-align: sub;
+  padding-top: 20px;
+}
+
+.cont {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
