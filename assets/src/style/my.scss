@@ -316,6 +316,25 @@ hr {
   fill:#f05f40;
 }
 
+svg path{
+  fill:none;
+  stroke: #f05f40;
+  stroke-width:8px;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 100;
+  opacity: 1;
+  animation: 5s text-outline infinite alternate;
+}
+
+@keyframes text-outline{
+  from{
+    stroke-dashoffset: 600;
+  }
+  to{
+    stroke-dashoffset: 0;
+  }
+}
+
 .img-thumbnail {
   width: 200px;
   margin-right:10px;
