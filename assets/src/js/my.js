@@ -1,3 +1,17 @@
+// ловим якорь
+var target = window.location.hash,
+    target = target.replace('#', '');
+
+// прокручивание страницы для якоря
+$(window).on('load', function() {
+    if (target) {
+        selector = "a[name='" + target + "']";
+        $('html, body').animate({
+            scrollTop: $(selector).offset().top - 50
+        }, 700, 'swing', function () {});
+    }
+});
+
 function onOffOpacity(opacityVol) {
     $('.navbar').stop().animate({opacity: opacityVol,}, 500, function() {});
 }
