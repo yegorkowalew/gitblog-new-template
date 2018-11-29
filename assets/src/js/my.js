@@ -2,15 +2,22 @@
 var target = window.location.hash,
     target = target.replace('#', '');
 
-// прокручивание страницы для якоря
-$(window).on('load', function() {
+// alert(window.location.pathname);
+var pathArray = window.location.pathname.split( '/' );
+var secondLevelLocation = pathArray[0];
+
+function goToAnchor(target) {
     if (target) {
         selector = "a[name='" + target + "']";
         $('html, body').animate({
             scrollTop: $(selector).offset().top - 50
         }, 700, 'swing', function () {});
     }
-});
+}
+
+if (target) {
+    goToAnchor(target)
+}
 
 function onOffOpacity(opacityVol) {
     $('.navbar').stop().animate({opacity: opacityVol,}, 500, function() {});
@@ -58,4 +65,17 @@ $(document).ready(function(){
             return false; 
         });
     });
+
+// ловим переход по якорю на странице
+$( "a" ).click(function() {
+    var str = $(this).attr("href");
+    var nrray = str.split( '#' );
+    if (nrray[1]) {
+        if (str.indexOf(pathArray[1])==1) {
+            goToAnchor(nrray[1]);
+            return false;
+        }
+    }
+  });
+
 });
