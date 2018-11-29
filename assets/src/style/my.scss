@@ -317,7 +317,7 @@ hr {
 // }
 
 .fil0 {
-  fill:#f05f40;
+  // fill:#f05f40;
 }
 
 svg path{
@@ -325,9 +325,9 @@ svg path{
   stroke: #f05f40;
   stroke-width:8px;
   stroke-dasharray: 600;
-  stroke-dashoffset: 100;
+  stroke-dashoffset: 20;
   opacity: 1;
-  animation: 5s text-outline infinite alternate;
+  animation: 4s text-outline 1 alternate;
 }
 
 @keyframes text-outline{

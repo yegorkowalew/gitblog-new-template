@@ -29,7 +29,7 @@ function opacityOnLoad() {
 
 $(document).ready(function(){
     var onScrollBottom = false;
-    var timerOnLoad = setTimeout(opacityOnLoad, 2000);
+    var timerOnLoad = setTimeout(opacityOnLoad, 3000);
     
     $( window ).scroll(function() {
         clearTimeout(timerOnLoad);
@@ -46,13 +46,13 @@ $(document).ready(function(){
     });
 
     $('.navbar').hover(function() {
-        $('.fil0').css({fill: "#db3636", transition: "0.5s"});
+        // $('.fil0').css({fill: "#db3636", transition: "0.5s"});
         if ((onScrollBottom === false) && ($(window).scrollTop() === 0)) {
             onScrollBottom = true;
             onOffOpacity(1);
         }
     }, function() {
-        $('.fil0').css({ fill: "#f05f40", transition: "0.5s"});
+        // $('.fil0').css({ fill: "#f05f40", transition: "0.5s"});
         if ((onScrollBottom === true) && ($(window).scrollTop() === 0)) {
             onScrollBottom = false;
             onOffOpacity(0.1);     
