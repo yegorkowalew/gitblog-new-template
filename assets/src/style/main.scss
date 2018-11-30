@@ -37,8 +37,11 @@
 @import "../../../bower_components/bootstrap/scss/_carousel";
 @import "../../../bower_components/bootstrap/scss/_utilities";
 
+
+
 // Подключение своих SCSS файлов
 @import "my";
 
 // Подключение своих SCSS файлов
-@import "pcmaster";
+@import "font-variables.scss";
+@import "font-style.scss";

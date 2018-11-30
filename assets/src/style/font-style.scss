@@ -1,0 +1,245 @@
+@import "variables";
+
+@font-face {
+  font-family: 'pcmaster';
+  src:  url('/fonts/pcmaster.eot?eynjzh');
+  src:  url('/fonts/pcmaster.eot?eynjzh#iefix') format('embedded-opentype'),
+    url('/fonts/pcmaster.ttf?eynjzh') format('truetype'),
+    url('/fonts/pcmaster.woff?eynjzh') format('woff'),
+    url('/fonts/pcmaster.svg?eynjzh#pcmaster') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// @font-face {
+//   font-family: 'pcmaster';
+//   src:  url('https://i.icomoon.io/public/temp/487d441811/pcmaster/pcmaster.eot?lgf7tt');
+//   src:  url('https://i.icomoon.io/public/temp/487d441811/pcmaster/pcmaster.eot?lgf7tt#iefix') format('embedded-opentype'),
+//     url('https://i.icomoon.io/public/temp/487d441811/pcmaster/pcmaster.ttf?lgf7tt') format('truetype'),
+//     url('https://i.icomoon.io/public/temp/487d441811/pcmaster/pcmaster.woff?lgf7tt') format('woff'),
+//     url('https://i.icomoon.io/public/temp/487d441811/pcmaster/pcmaster.svg?lgf7tt#pcmaster') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'pcmaster' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-whatsapp-square {
+  &:before {
+    content: $ico-whatsapp-square; 
+  }
+}
+.ico-viber-square {
+  &:before {
+    content: $ico-viber-square; 
+  }
+}
+.ico-telegram-square {
+  &:before {
+    content: $ico-telegram-square; 
+  }
+}
+.ico-vk-square {
+  &:before {
+    content: $ico-vk-square; 
+  }
+}
+.ico-odnoklassniki-square {
+  &:before {
+    content: $ico-odnoklassniki-square; 
+  }
+}
+.ico-facebook-square {
+  &:before {
+    content: $ico-facebook-square; 
+  }
+}
+.ico-phone-square {
+  &:before {
+    content: $ico-phone-square; 
+  }
+}
+.ico-youtube-square {
+  &:before {
+    content: $ico-youtube-square; 
+  }
+}
+.ico-github-square {
+  &:before {
+    content: $ico-github-square; 
+  }
+}
+.ico-twitter-square {
+  &:before {
+    content: $ico-twitter-square; 
+  }
+}
+.ico-patreon {
+  &:before {
+    content: $ico-patreon; 
+  }
+}
+.ico-mail-square {
+  &:before {
+    content: $ico-mail-square; 
+  }
+}
+.ico-instagram-square {
+  &:before {
+    content: $ico-instagram-square; 
+  }
+}
+.ico-viber-round {
+  &:before {
+    content: $ico-viber-round; 
+  }
+}
+.ico-whatsapp-round {
+  &:before {
+    content: $ico-whatsapp-round; 
+  }
+}
+.ico-dropbox {
+  &:before {
+    content: $ico-dropbox; 
+  }
+}
+.ico-jquery {
+  &:before {
+    content: $ico-jquery; 
+  }
+}
+.ico-node-dot-js {
+  &:before {
+    content: $ico-node-dot-js; 
+  }
+}
+.ico-vue-dot-js {
+  &:before {
+    content: $ico-vue-dot-js; 
+  }
+}
+.ico-csswizardry {
+  &:before {
+    content: $ico-csswizardry; 
+  }
+}
+.ico-microsoftword {
+  &:before {
+    content: $ico-microsoftword; 
+  }
+}
+.ico-microsoftexcel {
+  &:before {
+    content: $ico-microsoftexcel; 
+  }
+}
+.ico-python {
+  &:before {
+    content: $ico-python; 
+  }
+}
+.ico-ubuntu {
+  &:before {
+    content: $ico-ubuntu; 
+  }
+}
+.ico-mozillafirefox {
+  &:before {
+    content: $ico-mozillafirefox; 
+  }
+}
+.ico-windows {
+  &:before {
+    content: $ico-windows; 
+  }
+}
+.ico-codepen {
+  &:before {
+    content: $ico-codepen; 
+  }
+}
+.ico-dribbble {
+  &:before {
+    content: $ico-dribbble; 
+  }
+}
+.ico-linkedin {
+  &:before {
+    content: $ico-linkedin; 
+  }
+}
+.ico-debian {
+  &:before {
+    content: $ico-debian; 
+  }
+}
+.ico-django {
+  &:before {
+    content: $ico-django; 
+  }
+}
+.ico-skype {
+  &:before {
+    content: $ico-skype; 
+  }
+}
+.ico-visualstudiocode {
+  &:before {
+    content: $ico-visualstudiocode; 
+  }
+}
+.ico-youtube {
+  &:before {
+    content: $ico-youtube; 
+  }
+}
+.ico-visa-onlyne {
+  &:before {
+    content: $ico-visa-onlyne; 
+  }
+}
+.ico-paypal-onlyne1 {
+  &:before {
+    content: $ico-paypal-onlyne1; 
+  }
+}
+.ico-western-union-onlyne {
+  &:before {
+    content: $ico-western-union-onlyne; 
+  }
+}
+.ico-qiwi-onlyne {
+  &:before {
+    content: $ico-qiwi-onlyne; 
+  }
+}
+.ico-money-box {
+  &:before {
+    content: $ico-money-box; 
+  }
+}
+.ico-mastercard-onlyne {
+  &:before {
+    content: $ico-mastercard-onlyne; 
+  }
+}
+.ico-maestro-onlyne {
+  &:before {
+    content: $ico-maestro-onlyne; 
+  }
+}
+
